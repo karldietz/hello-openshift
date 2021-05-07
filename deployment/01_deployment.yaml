@@ -29,12 +29,4 @@ spec:
             scheme: HTTP
           initialDelaySeconds: 50
       restartPolicy: Always
-      env:
-      - name: TOP_SECRET
-         valueFrom:
-            secretKeyRef:
-              name: hello-openshift-secret
-              key: topsecret
-
-      
 ---
